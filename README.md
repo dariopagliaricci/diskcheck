@@ -4,11 +4,11 @@ A simple, resumable file readability scanner for macOS and Linux.
 
 ## What it does
 
-✅ Scans every file on a target disk or folder  
-✅ Tests if each file is **fully readable** (by reading all bytes)  
-✅ Logs any unreadable (I/O error) files  
-✅ Supports **pause and resume** (safe to Ctrl+C and restart later)  
-✅ Shows progress, percentage, and estimated time remaining
+- Scans every file on a target disk or folder
+- Tests if each file is fully readable (by reading all bytes)
+- Logs any unreadable (I/O error) files
+- Supports pause and resume (safe to Ctrl+C and restart later)
+- Shows progress, percentage, and estimated time remaining
 
 ---
 
@@ -16,11 +16,13 @@ A simple, resumable file readability scanner for macOS and Linux.
 
 ```bash
 sudo ./diskcheck.sh /path/to/target_folder_or_disk
+```
 
-## Example
+Example
 
 ```bash
 sudo ./diskcheck.sh "/Volumes/MyExternalDrive"
+```
 
 Features
 	•	Progress log: remembers which files were tested (~/diskcheck_progress.log)
@@ -38,7 +40,7 @@ Limitations
 	•	it does not verify data against checksums like SHA256
 	•	if you need cryptographic verification, combine with md5sum or shasum
 
-    MIT License
+MIT License
 
 Copyright (c) 2025 Dario Pagliaricci
 
