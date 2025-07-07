@@ -24,21 +24,22 @@ Example
 sudo ./diskcheck.sh "/Volumes/MyExternalDrive"
 ```
 
-Features
-	•	Progress log: remembers which files were tested (~/diskcheck_progress.log)
-	•	Error log: unreadable files are listed in (~/diskcheck_unreadable_files.txt)
-	•	Detailed errors: from cat system errors go to (~/diskcheck_read_errors.log)
-	•	Resumable: interrupt with Ctrl+C, restart later — previously tested files are skipped
+## Features
+
+- Progress log: remembers which files were tested (`~/diskcheck_progress.log`)
+- Error log: unreadable files are listed in (`~/diskcheck_unreadable_files.txt`)
+- Detailed errors: from cat system errors go to (`~/diskcheck_read_errors.log`)
+- Resumable: interrupt with Ctrl+C, restart later — previously tested files are skipped
 
 
-Requirements
-	•	bash (default on macOS/Linux)
-	•	no other dependencies
+## Requirements
+- bash (default on macOS/Linux)
+- no other dependencies
 
-Limitations
-	•	Only checks readability (basic I/O health)
-	•	it does not verify data against checksums like SHA256
-	•	if you need cryptographic verification, combine with md5sum or shasum
+## Limitations
+- Only checks readability (basic I/O health)
+- It does not verify data against checksums like SHA256
+- If you need cryptographic verification, combine with md5sum or shasum
 
 MIT License
 
